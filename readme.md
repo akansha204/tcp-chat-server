@@ -23,11 +23,10 @@ Whenever a client sends a message, the server receives it and broadcasts it to a
 ## Folder Structure
 
 tcp-chat-server/
-│
 ├── go.mod
 ├── server/
-│ ├── server.go # Starts the server, handles new clients, and broadcasts messages
-│ └── client.go # Handles each client's messages and communication
+│   ├── server.go        # Starts the server, handles new clients, and broadcasts messages
+│   └── client.go        # Handles each client's messages and communication
 └── readme.md
 
 ---
@@ -46,6 +45,10 @@ tcp-chat-server/
 ## How to Run
 
 1. Run the server 
- ```go run server/server.go ```
+ ```bash 
+  go run main.go
+ ```
 2. Run in another terminal this command to connect clients using nc(netcat)
-```nc localhost 8080```
+```bash 
+nc localhost 8080
+```
