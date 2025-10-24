@@ -20,16 +20,12 @@ Whenever a client sends a message, the server receives it and broadcasts it to a
 
 ---
 
-## Folder Structure
+**Folder Structure:**  
+`tcp-chat-server/` — contains  
+`main.go` (entry point to start the server),  
+`server.go` (handles client connections and message broadcasting),  
+`client.go` (manages individual client communication).
 
-tcp-chat-server/
-├── go.mod
-├── server/
-│   ├── server.go        # Starts the server, handles new clients, and broadcasts messages
-│   └── client.go        # Handles each client's messages and communication
-└── readme.md
-
----
 
 ## How It Works
 
